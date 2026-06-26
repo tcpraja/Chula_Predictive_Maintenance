@@ -1,0 +1,295 @@
+{
+    "project": "110 kW Fixed-Speed Screw Compressor Predictive Maintenance",
+    "validation_type": "Holdout and time-slice validation",
+    "training_rows": 1439220,
+    "test_rows": 359806,
+    "created_at": "2026-06-26 11:59:28",
+    "performance_summary": [
+        {
+            "Model": "Failure Prediction",
+            "Type": "Classification",
+            "Accuracy": 0.8956,
+            "Precision Weighted": 0.9115,
+            "Recall Weighted": 0.8956,
+            "F1 Weighted": 0.8944,
+            "ROC AUC": 0.9322,
+            "R2": null,
+            "MAE": null,
+            "RMSE": null,
+            "MAPE %": null
+        },
+        {
+            "Model": "Condition Classification",
+            "Type": "Multi-class Classification",
+            "Accuracy": 0.9284,
+            "Precision Weighted": 0.9425,
+            "Recall Weighted": 0.9284,
+            "F1 Weighted": 0.9318,
+            "ROC AUC": null,
+            "R2": null,
+            "MAE": null,
+            "RMSE": null,
+            "MAPE %": null
+        },
+        {
+            "Model": "Energy Prediction",
+            "Type": "Regression",
+            "Accuracy": null,
+            "Precision Weighted": null,
+            "Recall Weighted": null,
+            "F1 Weighted": null,
+            "ROC AUC": null,
+            "R2": 0.9654,
+            "MAE": 1.6064,
+            "RMSE": 2.1409,
+            "MAPE %": 1.9525
+        },
+        {
+            "Model": "RUL Prediction",
+            "Type": "Regression",
+            "Accuracy": null,
+            "Precision Weighted": null,
+            "Recall Weighted": null,
+            "F1 Weighted": null,
+            "ROC AUC": null,
+            "R2": 0.8374,
+            "MAE": 19.3377,
+            "RMSE": 24.0295,
+            "MAPE %": 9.4465
+        },
+        {
+            "Model": "Degradation Stage Prediction",
+            "Type": "Multi-class Classification",
+            "Accuracy": 0.9222,
+            "Precision Weighted": 0.9442,
+            "Recall Weighted": 0.9222,
+            "F1 Weighted": 0.9297,
+            "ROC AUC": null,
+            "R2": null,
+            "MAE": null,
+            "RMSE": null,
+            "MAPE %": null
+        }
+    ],
+    "regression_validation": [
+        {
+            "Model": "Energy Prediction",
+            "Unit": "kW",
+            "Actual Mean": 84.0213,
+            "Predicted Mean": 84.078,
+            "MAE": 1.6064,
+            "RMSE": 2.1409,
+            "R2": 0.9654,
+            "MAPE %": 1.9525,
+            "Residual Mean": -0.0567,
+            "Residual Std": 2.1401
+        },
+        {
+            "Model": "RUL Prediction",
+            "Unit": "days",
+            "Actual Mean": 218.4095,
+            "Predicted Mean": 217.2616,
+            "MAE": 19.3377,
+            "RMSE": 24.0295,
+            "R2": 0.8374,
+            "MAPE %": 9.4465,
+            "Residual Mean": 1.148,
+            "Residual Std": 24.002
+        }
+    ],
+    "time_slice_validation": [
+        {
+            "Validation Slice": 1,
+            "Rows": 71962,
+            "Failure Accuracy": 0.8833,
+            "Failure F1 Weighted": 0.8801,
+            "Condition Accuracy": 0.9289,
+            "Energy MAE kW": 1.6361,
+            "Energy RMSE kW": 2.183,
+            "Energy R2": 0.9643,
+            "RUL MAE Days": 20.3638,
+            "RUL RMSE Days": 24.5899,
+            "Degradation Accuracy": 0.921,
+            "Start Time": "2025-03-08 17:03:19",
+            "End Time": "2025-06-11 09:55:51"
+        },
+        {
+            "Validation Slice": 2,
+            "Rows": 71961,
+            "Failure Accuracy": 0.9463,
+            "Failure F1 Weighted": 0.9449,
+            "Condition Accuracy": 0.9525,
+            "Energy MAE kW": 1.5284,
+            "Energy RMSE kW": 2.0393,
+            "Energy R2": 0.969,
+            "RUL MAE Days": 18.7339,
+            "RUL RMSE Days": 21.6585,
+            "Degradation Accuracy": 0.9139,
+            "Start Time": "2025-06-11 09:57:44",
+            "End Time": "2025-09-14 02:19:59"
+        },
+        {
+            "Validation Slice": 3,
+            "Rows": 71961,
+            "Failure Accuracy": 0.8562,
+            "Failure F1 Weighted": 0.8444,
+            "Condition Accuracy": 0.9338,
+            "Energy MAE kW": 1.5105,
+            "Energy RMSE kW": 2.008,
+            "Energy R2": 0.9667,
+            "RUL MAE Days": 18.3199,
+            "RUL RMSE Days": 22.761,
+            "Degradation Accuracy": 0.9324,
+            "Start Time": "2025-09-14 02:21:53",
+            "End Time": "2025-12-17 18:53:35"
+        },
+        {
+            "Validation Slice": 4,
+            "Rows": 71961,
+            "Failure Accuracy": 0.8852,
+            "Failure F1 Weighted": 0.8882,
+            "Condition Accuracy": 0.9027,
+            "Energy MAE kW": 1.6088,
+            "Energy RMSE kW": 2.1416,
+            "Energy R2": 0.9616,
+            "RUL MAE Days": 20.0971,
+            "RUL RMSE Days": 26.5378,
+            "Degradation Accuracy": 0.9238,
+            "Start Time": "2025-12-17 18:55:29",
+            "End Time": "2026-03-22 11:36:39"
+        },
+        {
+            "Validation Slice": 5,
+            "Rows": 71961,
+            "Failure Accuracy": 0.9069,
+            "Failure F1 Weighted": 0.9101,
+            "Condition Accuracy": 0.9239,
+            "Energy MAE kW": 1.7483,
+            "Energy RMSE kW": 2.3183,
+            "Energy R2": 0.9597,
+            "RUL MAE Days": 19.1736,
+            "RUL RMSE Days": 24.3107,
+            "Degradation Accuracy": 0.92,
+            "Start Time": "2026-03-22 11:38:33",
+            "End Time": "2026-06-23 23:59:59"
+        }
+    ],
+    "classification_reports": {
+        "failure_prediction": {
+            "precision": {
+                "0": 0.8327,
+                "1": 0.9932,
+                "accuracy": 0.8956,
+                "macro avg": 0.9129,
+                "weighted avg": 0.9115
+            },
+            "recall": {
+                "0": 0.9948,
+                "1": 0.7928,
+                "accuracy": 0.8956,
+                "macro avg": 0.8938,
+                "weighted avg": 0.8956
+            },
+            "f1-score": {
+                "0": 0.9065,
+                "1": 0.8817,
+                "accuracy": 0.8956,
+                "macro avg": 0.8941,
+                "weighted avg": 0.8944
+            },
+            "support": {
+                "0": 183135.0,
+                "1": 176671.0,
+                "accuracy": 0.8956,
+                "macro avg": 359806.0,
+                "weighted avg": 359806.0
+            }
+        },
+        "condition_classification": {
+            "precision": {
+                "Bearing_Degradation": 0.9996,
+                "Expansion_Valve_Issue": 0.5241,
+                "Motor_Instability": 0.4116,
+                "Normal": 0.9352,
+                "Radiator_Dirty": 0.985,
+                "Water_Pump_Issue": 0.9525,
+                "accuracy": 0.9284,
+                "macro avg": 0.8013,
+                "weighted avg": 0.9425
+            },
+            "recall": {
+                "Bearing_Degradation": 0.8182,
+                "Expansion_Valve_Issue": 0.8777,
+                "Motor_Instability": 0.9328,
+                "Normal": 0.9743,
+                "Radiator_Dirty": 0.877,
+                "Water_Pump_Issue": 0.8887,
+                "accuracy": 0.9284,
+                "macro avg": 0.8948,
+                "weighted avg": 0.9284
+            },
+            "f1-score": {
+                "Bearing_Degradation": 0.8998,
+                "Expansion_Valve_Issue": 0.6563,
+                "Motor_Instability": 0.5712,
+                "Normal": 0.9544,
+                "Radiator_Dirty": 0.9279,
+                "Water_Pump_Issue": 0.9195,
+                "accuracy": 0.9284,
+                "macro avg": 0.8215,
+                "weighted avg": 0.9318
+            },
+            "support": {
+                "Bearing_Degradation": 24469.0,
+                "Expansion_Valve_Issue": 7307.0,
+                "Motor_Instability": 3244.0,
+                "Normal": 201213.0,
+                "Radiator_Dirty": 111287.0,
+                "Water_Pump_Issue": 12286.0,
+                "accuracy": 0.9284,
+                "macro avg": 359806.0,
+                "weighted avg": 359806.0
+            }
+        },
+        "degradation_stage_prediction": {
+            "precision": {
+                "Stage 1 - Healthy": 0.8103,
+                "Stage 2 - Early Degradation": 0.9901,
+                "Stage 3 - Degradation": 0.041,
+                "accuracy": 0.9222,
+                "macro avg": 0.6138,
+                "weighted avg": 0.9442
+            },
+            "recall": {
+                "Stage 1 - Healthy": 0.9734,
+                "Stage 2 - Early Degradation": 0.905,
+                "Stage 3 - Degradation": 0.9631,
+                "accuracy": 0.9222,
+                "macro avg": 0.9471,
+                "weighted avg": 0.9222
+            },
+            "f1-score": {
+                "Stage 1 - Healthy": 0.8844,
+                "Stage 2 - Early Degradation": 0.9456,
+                "Stage 3 - Degradation": 0.0787,
+                "accuracy": 0.9222,
+                "macro avg": 0.6362,
+                "weighted avg": 0.9297
+            },
+            "support": {
+                "Stage 1 - Healthy": 90710.0,
+                "Stage 2 - Early Degradation": 268879.0,
+                "Stage 3 - Degradation": 217.0,
+                "accuracy": 0.9222,
+                "macro avg": 359806.0,
+                "weighted avg": 359806.0
+            }
+        }
+    },
+    "validation_notes": [
+        "Holdout validation uses the test partition created after timestamp sorting where timestamp is available.",
+        "Time-slice validation checks whether model performance is stable across the holdout period.",
+        "RUL validation depends on whether true RUL was available; otherwise the target is derived for demonstration.",
+        "Failure probability bands compare predicted probability with observed failure rate."
+    ]
+}

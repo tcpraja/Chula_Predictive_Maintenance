@@ -1,0 +1,3 @@
+Model,Unit,Actual Mean,Predicted Mean,MAE,RMSE,R2,MAPE %,Residual Mean,Residual Std
+Energy Prediction,kW,84.0213,84.078,1.6064,2.1409,0.9654,1.9525,-0.0567,2.1401
+RUL Prediction,days,218.4095,217.2616,19.3377,24.0295,0.8374,9.4465,1.148,24.002
